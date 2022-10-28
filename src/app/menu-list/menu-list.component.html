@@ -1,0 +1,17 @@
+<h2>{{menuItems.menuName}}</h2>
+<div class="customDiv col-12" *ngFor="let item of menuItems">
+    <h3>{{item.dish_name}}</h3>
+    <div style="width: 100%;">
+        <h3 style="width: 50%">{{item.dish_currency + " " + item.dish_price}}</h3>
+        <h3 style="width: 50%">{{item.dish_calories + " Calories"}}</h3>
+    </div>
+    
+    <h3>{{item.dish_description}}</h3>
+    <!-- <input type="number" id="quantity" name="quantity" min="1" (mouseleave)="onInputChange($event)"> -->
+    <p>
+        <button (click)="subtractQuantity(item)"><i class="fa fa-minus"></i></button>
+        <span class="quantity" style="margin-left: 5px; margin-right: 5px">{{item.quantity}}</span>
+        <button (click)="addQuantity(item)"><i class="fa fa-plus"></i></button>
+    </p>
+    <h3 *ngIf="item.addonCat.length">Customizations Available</h3>
+</div>

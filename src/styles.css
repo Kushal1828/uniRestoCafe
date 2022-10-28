@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+nav a:hover {
+    color: rgb(50, 148, 151) !important;
+}
+
+nav a {
+    font-size: 20px;
+}
+
+.customDiv {
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    padding: 1rem;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+    margin-top: 0.5rem;
+}
